@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolS="http://schemas.android.com/tools">
+
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="city"
+            type="com.example.weathersample.database.City"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            toolS:text="Thanh hoa"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@{city.cityName}"
+            android:layout_marginStart="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            toolS:text="VN"
+            android:textSize="20sp"
+            android:text="@{city.country}"
+            android:layout_marginStart="16dp"
+            />
+    </LinearLayout>
+
+</layout>

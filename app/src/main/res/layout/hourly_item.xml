@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolS="http://schemas.android.com/tools">
+
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="hourly"
+            type="com.example.weathersample.Hourly"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            toolS:text="01:00"
+            android:layout_marginTop="4dp"
+            day="@{hourly.dt}"
+            textType="@{3}"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            toolS:src="@drawable/ic_clear_day"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            imageResource="@{hourly.weather.get(0).id}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            toolS:text="28"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            floatText="@{hourly.temp}"
+            type="@{0}"
+            />
+
+    </LinearLayout>
+
+</layout>

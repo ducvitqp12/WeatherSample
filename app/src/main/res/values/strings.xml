@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherSample</string>
+    <string name="_35">35º</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="_76">76%</string>
+    <string name="_2km_hr">2km/hr</string>
+    <string name="cloud">Cloud</string>
+    <string name="next_7_days">Next 7 days</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="night">Night</string>
+    <string name="day">Day</string>
+    <string name="chose_background">Chose Background</string>
+    <string name="more_setting">More Setting</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="chose_home_card_color">Chose home card color</string>
+</resources>
